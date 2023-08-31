@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FunkoShop | LOGIN</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <a href="/">
-                        <img src="" alt="Marca Funkoshop">
-                    </a>
-                    <li><a href="./pages/shop.html" target="_blank" rel="noopener noreferrer">SHOP</a></li>
-                    <li><a href="" target="_blank" rel="noopener noreferrer">CONTACTO</a></li>
-                    <li><a href="./pages/login.html" target="_blank" rel="noopener noreferrer">LOGIN</a></li>
-                    <li><a href="./pages/carrito.html" target="_blank" rel="noopener noreferrer">CARRITO</a></li>
+        <header class="container-header">
+            <nav class="navbar container">
+                <a class="logo-navbar" href="/">
+                    <img src="/assets/img/logo_light_horizontal.svg" alt="Marca Funkoshop">
+                </a>
+                <ul class="menu-navbar">
+                    <li class="menu-item-navbar">
+                        <a class="menu-link-navbar" href="./pages/shop.html" target="_blank" rel="noopener noreferrer">SHOP</a>
+                        <ul class="submenu-navbar">
+                            <li class="submenu-item-navbar">
+                                <a href="" class="submenu-link-navbar">Funkos</a>
+                            </li>
+                            <li class="submenu-item-navbar">
+                                <a href="" class="submenu-link-navbar">Remeras</a>
+                            </li>
+                            <li class="submenu-item-navbar">
+                                <a href="" class="submenu-link-navbar">LLaveros</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-navbar">
+                        <a class="menu-link-navbar" target="_blank" rel="noopener noreferrer">CONTACTO</a>
+                    </li>
+                    <li class="menu-item-navbar">
+                        <a class="menu-link-navbar" href="./pages/login.html" target="_blank" rel="noopener noreferrer">LOGIN</a>
+                    </li>
+                    <li class="menu-item-navbar">
+                        <a href="./pages/carrito.html">
+                            <img src="/assets/img/cart-icon.png" alt="ícono carrito">
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -25,11 +47,11 @@
             <form action="">
                 <div>
                     <label for="">Email:</label>
-                    <input type="email" name="" id="">
+                    <input type="email" name="" id="" required>
                 </div>
                 <div>
                     <label for="">Contraseña:</label>
-                    <input type="password" name="" id="">
+                    <input type="password" name="" id="" required>
                 </div>
                 <div>
                     <input type="submit" value="">
