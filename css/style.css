@@ -134,7 +134,8 @@ img {
     background-color: var(--primary-900);
 }
 
-/*NEWS - SECTION */
+/*---------------------------------HOME------------------------------------------- */
+/*NEWS*/
 
 .container-news {
     background-image: url(/assets/img/funkos-banner.webp);
@@ -183,6 +184,60 @@ position: relative;
 .link-news:hover {
     background-color: var(--primary-900);
     color: var(--light-font-solid);
+}
+
+/*COLLECTIONS*/
+
+.collection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-16) 0;
+}
+
+.collection:nth-child(even) .figure-collection {
+    order: -1;
+}
+
+.article-collection {
+    flex: 1;
+}
+
+.title-collection {
+    font-family: var(--alternative-font);
+    font-size: var(--font-display);
+    font-weight: 500;
+}
+
+.txt-collection {
+    margin-top: var(--spacing-24);
+    font-family: var(--alternative-font);
+    font-size: var(--font-large);
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-solid);
+    padding-bottom: var(--spacing-20);
+}
+
+.link-collection {
+    display: inline-block;
+    margin-top: var(--spacing-24);
+    font-size: var(--font-medium);
+    background-color: var(--dark-bg-solid);
+    color: var(--light-font-solid);
+    padding: var(--spacing-16) var(--spacing-36);
+    border-radius: 50px;
+    font-weight: 500;
+    transition: background .3s ease-in-out;
+}
+
+.link-collection:hover {
+    background-color: var(--primary-900);
+}
+
+.figure-collection {
+    flex: 1;
+    width: 600px;
+    height: 600px;
 }
 
 /*FOOTER*/
