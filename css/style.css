@@ -240,11 +240,102 @@ position: relative;
     height: 600px;
 }
 
+/*COLLECTIONS - RELEASES*/
+
+
+
+/*--------------------------------- SHOP ------------------------------------------- */
+
+.shop {
+    display: flex;
+    gap: var(--spacing-28);
+    font-family: var(--base-font);
+    margin: var(--spacing-68) auto;
+}
+
+
+
+/*FILTERS*/
+
+.filters-shop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-28);
+}
+
+.filter-title {
+    font-size: var(--font-medium);
+    font-weight: 500;
+}
+
+.search-filter-shop, .order-filter-shop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-12);
+}
+
+.search-filter-shop input,
+.order-filter-shop select{
+    border-radius: 6px;
+    border: 2px solid var(--dark-solid);
+    font-size: var(--font-medium);
+    padding: var(--spacing-8);
+}
+
+.price-filter-shop div {
+    margin-top: var(--spacing-12);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.price-filter-shop label {
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+
+.price-filter-shop input {
+    width: 70px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: var(--font-medium);
+    border: 2px solid var(--dark-solid);
+    padding: 4px var(--spacing-8);
+}
+
+.checks-filter-shop {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.checks-filter-shop {
+    margin-bottom: var(--spacing-12);
+}
+
+.checks-filter-shop div {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    font-weight: 500;
+    font-size: var(--font-medium);
+}
+
+.filters__checks div input {
+    accent-color: var(--primary-solid);
+    width: 16px;
+    height: 16px;
+}
+
+
+/*SHOP - ITEMS*/
+
+
 /*FOOTER*/
 
 .footer {
     background-color: var(--dark-bg-solid);
-    padding: var(var(--spacing-68));
+    padding: var(--spacing-68);
 }
 
 footer p {
