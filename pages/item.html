@@ -42,24 +42,25 @@
             </nav>
         </header>
 
-        <main>
-
-            <section>
-                <article>
-                    <div>
-                        <img src="" alt="">
-                    </div>
-                    <div>
-                        <span>STAR WARS</span>
-                        <h3>BABY YODA BLUEBALL</h3>
-                        <p>Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-                        <p>1799.99</p>
-                        <div>
-                            <input type="text">
-                            <button>Agregar al carrito</button>
-                        </div>
-                        <p>3 CUOTAS SIN INTERÉS</p>
-                    </div>
+        <main class="container">
+            <section class="item">
+                <div class="item-img">
+                    <img src="/assets/img/baby-yoda-1 1.png" alt="Figura YODA">
+                </div>
+                <article class="item-content">
+                        <p class="item-group">STAR WARS</p>
+                        <h3 class="item-title">BABY YODA BLUEBALL</h3>
+                        <p class="item-description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
+                        <p class="item-price">$ 1799,99</p>
+                        <form class="item-cart">
+                            <input class="item-cart-number" type="text" name="number" placeholder="0">
+                            <div class="item-content-btn">
+                                <button class="item-cart-btn"><iconify-icon icon="ph:plus-fill" width="30" height="30"></iconify-icon></button>
+                                <button class="item-cart-btn"><iconify-icon icon="ph:minus-fill" width="30" height="30"></iconify-icon></button>
+                            </div>
+                            <button class="btn item-cart-submit">Agregar al carrito</button>
+                        </form>
+                        <p class="item-payment"><a href="">Ver métodos de pago -</a>3 CUOTAS SIN INTERÉS</p>
                 </article>
             </section>
     
@@ -129,10 +130,10 @@
                     <li class="menu-item-navbar"><a class="menu-link-navbar" href="/pages/login.html">INGRESAR</a></li>
                     <li class="menu-item-navbar"><a class="menu-link-navbar" href="">CONTACTO</a></li>
                 </ul>
-                <img src="assets/img/SvgjsG8619.svg" alt="Marca Funkoshop">
+                <img src="/assets/img/SvgjsG8619.svg" alt="Marca Funkoshop">
             </nav>
             <p>All rights reserved 2023 - Funkoshop ©</p>
         </footer>
-        
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     </body>
 </html>
