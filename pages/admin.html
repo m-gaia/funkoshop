@@ -27,21 +27,22 @@
     </header>
 
     <main>
-        <section>
-            <div>
-                <iconify-icon icon="material-symbols:search"></iconify-icon>
-                <input type="search" name="search" id="search" placeholder="código, nombre o categoria">
+        <section id="admin" class="container">
+            <div class="admin-search">
+                <iconify-icon class="admin-icon-search" icon="material-symbols:search"></iconify-icon>
+                <input class="admin-bar-search" type="search" name="search" id="search" placeholder="código, nombre o categoria">
             </div>
-            <div>
+            <div class="admin-header">
                 <h2>LISTADO DE PRODUCTOS</h2>
-                <span>AGREGAR</span>
-                <iconify-icon icon="ph:plus-fill"></iconify-icon>
+                <span>AGREGAR
+                    <a href=""><iconify-icon icon="ph:plus-fill"></iconify-icon></a>
+                </span>
             </div>
             <article>
-                <div>
-                    <table>
+                <div class="admin-container">
+                    <table class="admin-table">
                         <thead>
-                            <tr>
+                            <tr class="admin-table-header">
                                 <th>ID</th>
                                 <th>Código</th>
                                 <th>Nombre del producto</th>
@@ -50,8 +51,8 @@
                                 <th></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
+                        <tbody class="admin-table-body">
+                            <tr class="admin-table-row">
                                 <td>
                                     1
                                 </td>
@@ -64,18 +65,20 @@
                                 <td>
                                     <span>STAR WARS</span>
                                 </td>
-                                <td>
-                                    <button>
-                                        <iconify-icon icon="fluent:edit-16-filled"></iconify-icon>
-                                    </button>
-                                </td>
-                                <td>
-                                    <button>
-                                        <iconify-icon icon="material-symbols:delete"></iconify-icon>
-                                    </button>
-                                </td>
+                                <div class="admin-icons">
+                                    <td>
+                                        <button>
+                                            <iconify-icon icon="material-symbols:edit" style="color: #1d84b5;"></iconify-icon>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <iconify-icon icon="material-symbols:delete" style="color: #FF3333;"></iconify-icon>
+                                        </button>
+                                    </td>
+                                </div>
                             </tr>
-                            <tr>
+                            <tr class="admin-table-row">
                                 <td>
                                     2
                                 </td>
@@ -88,16 +91,18 @@
                                 <td>
                                     <span>STAR WARS</span>
                                 </td>
-                                <td>
-                                    <button>
-                                        <iconify-icon icon="fluent:edit-16-filled"></iconify-icon>
-                                    </button>
-                                </td>
-                                <td>
-                                    <button>
-                                        <iconify-icon icon="material-symbols:delete"></iconify-icon>
-                                    </button>
-                                </td>
+                                <div class="admin-icons">
+                                    <td>
+                                        <button>
+                                            <iconify-icon icon="material-symbols:edit" style="color: #1d84b5;"></iconify-icon>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <iconify-icon icon="material-symbols:delete" style="color: #FF3333;"></iconify-icon>
+                                        </button>
+                                    </td>
+                                </div>
                             </tr>
                         </tbody>
                     </table>
@@ -114,7 +119,7 @@
                 <li class="menu-item-navbar"><a class="menu-link-navbar" href="/pages/login.html">INGRESAR</a></li>
                 <li class="menu-item-navbar"><a class="menu-link-navbar" href="">CONTACTO</a></li>
             </ul>
-            <img src="assets/img/SvgjsG8619.svg" alt="Marca Funkoshop">
+            <img src="/assets/img/SvgjsG8619.svg" alt="Marca Funkoshop">
         </nav>
         <p>All rights reserved 2023 - Funkoshop ©</p>
     </footer>

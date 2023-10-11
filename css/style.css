@@ -900,6 +900,124 @@ tfoot {
     font-size: var(--font-small);
 }
 
+/*--------------------------------- ADMIN ------------------------------------------- */
+
+#admin {
+    margin: var(--spacing-68) auto;
+}
+.admin-search {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-36);
+}
+
+.admin-icon-search {
+    font-size: var(--font-xlarge);
+}
+
+.admin-bar-search {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-8);
+    border: 2px solid var(--dark-solid);
+    border-radius: 6px;
+    outline: none;
+    flex: 0 0 35%;
+}
+
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-24);
+}
+
+.admin-header h2 {
+    font-size: var(--font-jumbo) ;
+}
+
+.admin-header span {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-16);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+.admin-header span a {
+    display: flex;
+    font-size: var(--font-medium);
+    color: var(--primary-btn);
+}
+
+.admin-table {
+    display: flex;
+    gap: var(--spacing-16);
+    flex-direction: column;
+}
+
+.admin-table-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-table-header th {
+    flex: 1; 
+    flex-grow: 1; 
+    box-sizing: border-box; 
+    color: var(--dark-solid);
+    text-align: left;
+    font-family: var(--base-font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.06rem;
+}
+
+.admin-table-row {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-table-row td {
+    flex: 1; 
+    flex-grow: 1; 
+    box-sizing: border-box;
+}
+
+.admin-table-body td {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 253.523%; /* 3.80281rem */
+    letter-spacing: 0.06rem;
+}
+
+#admin button {
+    font-size: var(--font-medium);
+    border: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.admin-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.admin-icons td {
+    align-items: center;
+}
+
+
+
+
 /*FOOTER*/
 
 .footer {
