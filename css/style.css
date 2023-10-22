@@ -1015,8 +1015,117 @@ tfoot {
     align-items: center;
 }
 
+/*--------------------------------- EDIT ------------------------------------------- */
 
+#edit {
+    margin: var(--spacing-68) auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
+}
 
+.edit-title {
+    font-size: var(--font-jumbo);
+}
+
+.edit-form {
+    max-width: 990px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
+}
+
+/*--------------------------------- FORM - EDIT ------------------------------------------- */
+#edit {
+    margin: var(--spacing-68) auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: var(--spacing-36);
+}
+
+.edit-title {
+    font-size: var(--font-jumbo);
+}
+
+textarea {
+    width: 100%;
+    font-size: var(--font-large);
+    padding: var(--spacing-8);
+    font-weight: 400;
+    font-family: var(--base-font);
+}
+
+textarea::placeholder {
+    color: gainsboro;
+}
+
+.form-box-grid {
+    display: grid;
+    /* grid-template-columns: 1fr 3fr; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-16);
+    align-items: center;
+}
+
+.form-box-flex {
+    display: flex;
+    gap: var(--spacing-12);
+    align-items: center;
+}
+
+.form-flex {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-12);
+}
+
+.form-flex label {
+    flex-grow: 1; 
+    text-align: left; 
+    box-sizing: border-box; 
+}
+
+#edit label {
+    font-size: var(--font-medium);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.form-box-flex select {
+    border-radius: 6px;
+    border: 2px solid var(--dark-solid);
+    font-size: var(--font-small);
+    padding: var(--spacing-8);
+}
+
+.form-input {
+    padding: 1rem 0.5rem;
+    border: none;
+    flex-grow: 1;
+    border-bottom: 2px solid #ff3333;
+    font-size: var(--font-small);
+}
+
+#edit input:focus {
+    outline: 0;
+}
+
+#edit select {
+    border-radius: 6px;
+    border: 2px solid var(--dark-solid);
+    font-size: var(--font-medium);
+    padding: var(--spacing-8);
+}
+
+#edit button {
+    width: 20%;
+}
 
 /*FOOTER*/
 
