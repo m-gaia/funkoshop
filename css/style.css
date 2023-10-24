@@ -810,6 +810,7 @@ tfoot {
 }
 
 .form-btn {
+    width: fit-content;
     font-size: var(--font-xsmall);
     padding: var(--spacing-12) var(--spacing-28);
     background-color: var(--primary-solid);
@@ -1017,7 +1018,7 @@ tfoot {
 
 /*--------------------------------- EDIT ------------------------------------------- */
 
-#edit {
+/* #edit {
     margin: var(--spacing-68) auto;
     display: flex;
     flex-direction: column;
@@ -1028,9 +1029,9 @@ tfoot {
 
 .edit-title {
     font-size: var(--font-jumbo);
-}
+} */
 
-.edit-form {
+.container-form {
     max-width: 990px;
     display: flex;
     flex-direction: column;
@@ -1040,7 +1041,7 @@ tfoot {
 }
 
 /*--------------------------------- FORM - EDIT ------------------------------------------- */
-#edit {
+#edit, #create {
     margin: var(--spacing-68) auto;
     display: flex;
     flex-direction: column;
@@ -1049,7 +1050,7 @@ tfoot {
     gap: var(--spacing-36);
 }
 
-.edit-title {
+.form-title {
     font-size: var(--font-jumbo);
 }
 
@@ -1091,7 +1092,7 @@ textarea::placeholder {
     box-sizing: border-box; 
 }
 
-#edit label {
+.form-label {
     font-size: var(--font-medium);
     font-weight: 600;
     letter-spacing: 1px;
@@ -1123,9 +1124,9 @@ textarea::placeholder {
     padding: var(--spacing-8);
 }
 
-#edit button {
-    width: 20%;
-}
+/* #edit button {
+    width: fit-content;
+} */
 
 /*FOOTER*/
 

@@ -29,12 +29,12 @@
     <main class="container">
         <section id="edit">
             <div>
-                <h2 class="edit-title">EDITAR ITEM</h2>
+                <h2 class="form-title">EDITAR ITEM</h2>
             </div>
-            <form action="" class="edit-form">
+            <form action="" class="container-form">
                 <div class="form-box-grid">
                     <div class="form-box-flex">
-                        <label for="categoria">Categoria:</label>
+                        <label class="form-label" for="categoria">Categoria:</label>
                         <select name="categoria" id="categoria" required>
                             <option value="" disabled selected>Seleccionar</option>
                             <option value="">STAR WARS</option>
@@ -43,7 +43,7 @@
                         </select>
                     </div>
                     <div class="form-box-flex">
-                        <label for="licencia">Licencia:</label>
+                        <label class="form-label" for="licencia">Licencia:</label>
                         <select name="licencia" id="licencia" required>
                             <option value="" disabled selected>Seleccionar</option>
                             <option value="">Con Licencia</option>
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div>
-                    <label for="nameproducto">Nombre del producto:</label>
+                    <label class="form-label" for="nameproducto">Nombre del producto:</label>
                     <input class="form-input" type="text" name="nameproducto" id="nameproducto" placeholder="Kakashi Hatake Shippuden Saga" required>
                 </div>
                 <div>
@@ -60,25 +60,25 @@
                 </div>
                 <div class="form-box-grid">
                     <div class="form-flex">
-                        <label for="sku">SKU:</label>
+                        <label class="form-label" for="sku">SKU:</label>
                         <input class="form-input" type="text" name="sku" id="sku" placeholder="SSK111AB001" required>
                     </div>
                     <div class="form-flex">
-                        <label for="precio">Precio:</label>
+                        <label class="form-label" for="precio">Precio:</label>
                         <input class="form-input" type="text" name="precio" id="precio" placeholder="$ 0.000,00" required>
                     </div>
                     <div class="form-flex">
-                        <label for="stock">Stock:</label>
+                        <label class="form-label" for="stock">Stock:</label>
                         <input class="form-input" type="text" name="stock" id="stock" placeholder="0" required>
                     </div>
                 </div>
                 <div class="form-box-grid">
                     <div class="form-flex">
-                        <label for="descuento">Descuento:</label>
+                        <label class="form-label" for="descuento">Descuento:</label>
                         <input class="form-input" type="text" name="descuento" id="descuento" placeholder="0%" required>
                     </div>
                     <div class="form-flex">
-                        <label for="">Cuotas:</label>
+                        <label class="form-label" for="">Cuotas:</label>
                         <select name="" id="" placeholder="3 Cuotas sin interés" required>
                             <option value="">3 Cuotas sin interés</option>
                             <option value="">6 Cuotas con interés</option>
@@ -86,10 +86,11 @@
                     </div>
                 </div>
                 <div class="form-box-grid">
-                    <label for="file">Imágenes:</label>
+                    <label class="form-label" for="file">Imágenes:</label>
                     <input type="file" name="file" id="file">
                 </div>
                 <button class="form-btn btn" type="submit">Modificar producto</button>
+
             </form>
         </section>
     </main>

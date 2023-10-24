@@ -26,15 +26,15 @@
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="container">
+        <section id="create">
             <div>
-                <h2>CREAR NUEVO ITEM</h2>
+                <h2 class="form-title">CREAR NUEVO ITEM</h2>
             </div>
-            <form action="">
-                <div>
-                    <div>
-                        <label for="categoria">Categoria:</label>
+            <form action="" class="container-form">
+                <div class="form-box-grid">
+                    <div class="form-box-flex">
+                        <label class="form-label" for="categoria">Categoria:</label>
                         <select name="categoria" id="categoria" required>
                             <option value="" disabled selected>Seleccionar</option>
                             <option value="">STAR WARS</option>
@@ -42,8 +42,8 @@
                             <option value="">HARRY POTTER</option>
                         </select>
                     </div>
-                    <div>
-                        <label for="licencia">Licencia:</label>
+                    <div class="form-box-flex">
+                        <label class="form-label" for="licencia">Licencia:</label>
                         <select name="licencia" id="licencia" required>
                             <option value="" disabled selected>Seleccionar</option>
                             <option value="">Con Licencia</option>
@@ -52,45 +52,47 @@
                     </div>
                 </div>
                 <div>
-                    <label for="nameproducto">Nombre del producto:</label>
-                    <input type="text" name="nameproducto" id="nameproducto" placeholder="Kakashi Hatake Shippuden Saga" required>
+                    <label class="form-label" for="nameproducto">Nombre del producto:</label>
+                    <input class="form-input" type="text" name="nameproducto" id="nameproducto" placeholder="Kakashi Hatake Shippuden Saga" required>
                 </div>
                 <div>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Descripción del producto"></textarea>
                 </div>
-                <div>
-                    <div>
-                        <label for="sku">SKU:</label>
-                        <input type="text" name="sku" id="sku" placeholder="SSK111AB001" required>
+                <div class="form-box-grid">
+                    <div class="form-flex">
+                        <label class="form-label" for="sku">SKU:</label>
+                        <input class="form-input" type="text" name="sku" id="sku" placeholder="SSK111AB001" required>
                     </div>
-                    <div>
-                        <label for="precio">Precio:</label>
-                        <input type="text" name="precio" id="precio" placeholder="$ 0.000,00" required>
+                    <div class="form-flex">
+                        <label class="form-label" for="precio">Precio:</label>
+                        <input class="form-input" type="text" name="precio" id="precio" placeholder="$ 0.000,00" required>
                     </div>
-                    <div>
-                        <label for="stock">Stock:</label>
-                        <input type="text" name="stock" id="stock" placeholder="0" required>
+                    <div class="form-flex">
+                        <label class="form-label" for="stock">Stock:</label>
+                        <input class="form-input" type="text" name="stock" id="stock" placeholder="0" required>
                     </div>
                 </div>
-                <div>
-                    <div>
-                        <label for="descuento">Descuento:</label>
-                        <input type="text" name="descuento" id="descuento" placeholder="0%" required>
+                <div class="form-box-grid">
+                    <div class="form-flex">
+                        <label class="form-label" for="descuento">Descuento:</label>
+                        <input class="form-input" type="text" name="descuento" id="descuento" placeholder="0%" required>
                     </div>
-                    <div>
-                        <label for="">Cuotas:</label>
+                    <div class="form-flex">
+                        <label class="form-label" for="">Cuotas:</label>
                         <select name="" id="" placeholder="3 Cuotas sin interés" required>
                             <option value="">3 Cuotas sin interés</option>
                             <option value="">6 Cuotas con interés</option>
                         </select>
                     </div>
                 </div>
-                <div>
-                    <label for="file">Imágenes:</label>
+                <div class="form-box-grid">
+                    <label class="form-label" for="file">Imágenes:</label>
                     <input type="file" name="file" id="file">
                 </div>
-                <button type="submit">Agregar producto</button>
-                <button type="reset">Limpiar</button>
+                <div class="form-box-grid">
+                    <button class="form-btn btn" type="submit">Agregar producto</button>
+                    <button class="form-btn btn" type="reset">Limpiar</button>
+                </div>
             </form>
         </section>
     </main>
@@ -103,7 +105,7 @@
                 <li class="menu-item-navbar"><a class="menu-link-navbar" href="/pages/login.html">INGRESAR</a></li>
                 <li class="menu-item-navbar"><a class="menu-link-navbar" href="">CONTACTO</a></li>
             </ul>
-            <img src="assets/img/SvgjsG8619.svg" alt="Marca Funkoshop">
+            <img src="/assets/img/SvgjsG8619.svg" alt="Marca Funkoshop">
         </nav>
         <p>All rights reserved 2023 - Funkoshop ©</p>
     </footer>
