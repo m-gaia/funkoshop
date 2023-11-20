@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include("../../partials/head.ejs") %>
+<body>
+    <%-include("../../partials/header-admin")%>
+    <main class="container login" id="login">
+        <h2 class="login-title">INGRESAR A MI CUENTA</h2>
+        <form class="login-form form" action="">
+            <div class="login-form-row">
+                <label class="form-label" for="email">Email:</label>
+                <input class="form-input" type="email" name="email" id="email" placeholder="johndoe@email.com" required>
+            </div>
+            <div class="login-form-row">
+                <label class="form-label" for="password">Contraseña:</label>
+                <input class="form-input" type="password" name="password" id="password" placeholder="●●●●●●●●●●●" required>
+            </div>
+            <div class="form-submit">
+                <input class="form-btn btn" type="submit" value="Ingresar">
+                <div class="form-remember">
+                    <input type="checkbox" name="remember" id="">
+                    <label for="">Recordarme</label>
+                </div>
+            </div>
+            <a class="form-link" href="">Olvide mi contraseña</a>
+        </form>
+    </main>
+    <%-include("../../partials/footer")   %>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include("../../partials/head.ejs") %>
+<body>
+    <%-include("../../partials/header")%>
+    <main id="cart-summary">
+        <section class="container" id="cart">
+            <h2 class="cart-title">CARRITO DE COMPRAS</h2>
+            <form action="">
+                <article>
+                    <div class="cart-container">
+                        <table class="cart-table">
+                            <thead>
+                                <tr class="cart-head">
+                                    <th></th>
+                                    <th>DETALLE DE PRODUCTO</th>
+                                    <th>CANTIDAD</th>
+                                    <th>PRECIO</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cart-item-body">
+                                    <td>
+                                        <img class="cart-img" src="/assets/img/baby-yoda-1 1.png" alt="Figura YODA">
+                                    </td>
+                                    <td class="cart-item-txt">
+                                        <h6>BABY YODA BLUEBALL</h6>
+                                        <span>STAR WARS</span>
+                                        <span class="cart-item-price">Precio unitario: $ 1799,99</span>
+                                    </td>
+                                    <td>
+                                        <div class="cart-item-quantity">
+                                            <input id="quantity" class="cart-item-number" type="text" name="quantity" placeholder="0">
+                                            <div class="cart-content-btn">
+                                                <button id="add" class="cart-item-btn2" type="button"><iconify-icon icon="ph:plus-fill"></iconify-icon></button>
+                                                <button id="subtract" class="cart-item-btn2" type="button"><iconify-icon icon="ph:minus-fill"></iconify-icon></button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <span class="cart-price">$ 3599,98</span>
+                                    </td>
+                                    <td>
+                                        <button class="cart-item-btn">
+                                            <iconify-icon icon="zondicons:close-outline"></iconify-icon>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+            </form>
+        </section>
+
+        <section class="container" id="summary">
+            <div class="summary-container">
+                <div class="summary-layout">
+                    <h2 class="summary-title">RESUMEN</h2>
+                    <div class="summary-table">
+                        <form action="">
+                            <table class="summary-body">
+                                <tbody class="summary-items">
+                                    <tr>
+                                        <th>CANTIDAD DE ELEMENTOS</th>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <th>SUBTOTAL</th>
+                                        <td>$ 5.399,97</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ENVIO</th>
+                                        <td>$ 0,00</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot class="summary-footer">
+                                    <tr>
+                                        <th>TOTAL</th>
+                                        <td>$ 5.399,97</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <div class="form-submit" style="background-color:var(--primary-solid)">
+                    <input class="form-btn btn" type="submit" value="IR A PAGAR">
+                </div>
+            </div>
+        </section>
+    </main>
+    <%-include("../../partials/footer")   %>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="../../js/item.js"></script>
+</body>
+</html>

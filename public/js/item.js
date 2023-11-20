@@ -18,4 +18,13 @@ subtract.addEventListener('click', () => {
  });
 
 
+// add.addEventListener('click', () => quantity.value = Number(quantity.value) + 1);
+// subtract.addEventListener('click', () => {
+//   quantity.value = Number(quantity.value) === 0
+//     ? 0
+//     : Number(quantity.value) - 1
+// });
+// quantity.addEventListener('change', () => quantity.value = Number(quantity.value) < 0 && 0);
+
+
 

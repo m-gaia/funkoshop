@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include("../../partials/head.ejs") %>
+<body>
+    <%-include("../../partials/header-admin")%>
+    <main>
+        <section id="admin" class="container">
+            <div class="admin-search">
+                <iconify-icon class="admin-icon-search" icon="material-symbols:search"></iconify-icon>
+                <input class="admin-bar-search" type="search" name="search" id="search" placeholder="código, nombre o categoria">
+            </div>
+            <div class="admin-header">
+                <h2>LISTADO DE PRODUCTOS</h2>
+                <span>AGREGAR
+                    <a href=""><iconify-icon icon="ph:plus-fill"></iconify-icon></a>
+                </span>
+            </div>
+            <article>
+                <div class="admin-container">
+                    <table class="admin-table">
+                        <thead>
+                            <tr class="admin-table-header">
+                                <th>ID</th>
+                                <th>Código</th>
+                                <th>Nombre del producto</th>
+                                <th>Categoria</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="admin-table-body">
+                            <tr class="admin-table-row">
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    <span>STW001001</span>
+                                </td>
+                                <td>
+                                    <span>Baby Yoda Blueball </span>
+                                </td>
+                                <td>
+                                    <span>STAR WARS</span>
+                                </td>
+                                <td>
+                                    <button>
+                                        <iconify-icon icon="material-symbols:edit" style="color: #1d84b5;"></iconify-icon>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button>
+                                        <iconify-icon icon="material-symbols:delete" style="color: #FF3333;"></iconify-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="admin-table-row">
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    <span>STW001002</span>
+                                </td>
+                                <td>
+                                    <span>Boba Fett Fighter</span>
+                                </td>
+                                <td>
+                                    <span>STAR WARS</span>
+                                </td>
+                                <td>
+                                    <button>
+                                        <iconify-icon icon="material-symbols:edit" style="color: #1d84b5;"></iconify-icon>
+                                    </button>
+                                </td>
+                                <td>
+                                    <button>
+                                        <iconify-icon icon="material-symbols:delete" style="color: #FF3333;"></iconify-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+        </section>
+    </main>
+    <%-include("../../partials/footer")   %>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
