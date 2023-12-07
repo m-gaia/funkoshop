@@ -10,6 +10,7 @@ app.set("view engine","ejs")
 const mainRoutes = require('./src/router/mainRoutes');
 const shopRoutes = require('./src/router/shopRoutes');
 const adminRoutes = require('./src/router/adminRoutes');
+const authRoutes = require('./src/router/authRoutes');
 const { notFoundPage } = require('./src/utils/errorHandlers');
 
 /* Define carpeta de archivos estáticos */
@@ -28,6 +29,7 @@ app.use(express.json());
 app.use('/', mainRoutes);
 app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes);
+app.use('/auth', authRoutes);
 
 app.use(notFoundPage);
 
