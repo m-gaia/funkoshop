@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=titulo%></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <%-include("./partials/header")%>
+    <!-- News Section -->
+    <section class="container-news">
+        <article class="news container">
+            <h3 class="title-news">Nuevos Ingresos</h3>
+            <p class="txt-news">Descubrí el próximo Funko Pop de tu colección</p>
+            <button class="link-news"><a href="/shop">SHOP</a></button>
+        </article>
+    </section>
+
+    <!-- Contenido Principal-->
+    <main class="main-collection">
+        <section class="container collection">
+            <article class="article-collection">
+                <h3 class="title-collection">Pokemon</h3>
+                <p class="txt-collection">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                <a class="link-collection" href="">VER COLECCIÓN</a>
+            </article>
+            <div class="figure-collection">
+                <img src="./assets/img/vulpix-1 1.png" alt="figura Pokemon">
+            </div>
+        </section>
+        <section class="container collection">
+            <article class="article-collection">
+                <h3 class="title-collection">Star Wars</h3>
+                <p class="txt-collection">Disfruta de una saga que sigue agregando personajes a su colección.</p>
+                <a class="link-collection" href="">VER COLECCIÓN</a>
+            </article>
+            <div class="figure-collection">
+                <img src="./assets/img/baby-yoda-1 1.png" alt="figura Star Wars">
+            </div>
+        </section>
+        <section class="container collection">
+            <article class="article-collection">
+                <h3 class="title-collection">Harry Potter</h3>
+                <p class="txt-collection">Revive los recuerdos de una saga llena de magia y encanto.</p>
+                <a class="link-collection" href="">VER COLECCIÓN</a>
+            </article>
+            <div class="figure-collection">
+                <img src="./assets/img/snape-patronus-1 1.png" alt="figura Harry Potter">
+            </div>
+        </section>
+        <section class="container collection">
+            <article class="article-collection">
+                <h3 class="title-collection">Naruto</h3>
+                <p class="txt-collection">Una de las historias ánime más famosas ahora también coleccionable.</p>
+                <a class="link-collection" href="">VER COLECCIÓN</a>
+            </article>
+            <div class="figure-collection">
+                <img src="./assets/img/nr-cover.png" alt="figura Naruto">
+            </div>
+        </section>
+        <section class="container slider glide">
+            <h2 class="slider-title">ÚLTIMOS LANZAMIENTOS</h2>
+            <%-include("./partials/slider")   %>
+        </section>
+    </main>
+    <%-include("./partials/footer")   %>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="./js/glide.js"></script>
+</body>
+</html>

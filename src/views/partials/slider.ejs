@@ -1,0 +1,26 @@
+<div class="glide__track" data-glide-el="track">
+    <ul class="slider-items glide__slides">
+        <% funko.forEach(funko=>{%>
+            <li class="slider-item glide__slide">
+                <article>
+                    <a href="">
+                        <div class="card-item-img">
+                            <span class="card-item-tag">NUEVO</span>
+                            <img src="<%=funko.img_front%>" alt="<%=funko.product_description%>">
+                        </div>
+                        <div class="card-item-content">
+                            <p class="card-item-group"><%=funko.licence_name%></p>
+                            <h4 class="card-item-title"><%=funko.product_name%></h4>
+                            <p class="card-item-price"><%=funko.product_price%></p>
+                            <p class="card-item-payment">3 CUOTAS SIN INTERÉS</p>
+                    </div>
+                    </a>
+                </article>
+            </li>
+        <% })%>
+    </ul>
+</div>
+<div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left icon-slider" data-glide-dir="<"><iconify-icon icon="ic:round-chevron-left"></iconify-icon></button>
+    <button class="glide__arrow glide__arrow--right icon-slider" data-glide-dir=">"><iconify-icon icon="ic:round-chevron-right"></iconify-icon></button>
+</div>
