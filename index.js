@@ -15,8 +15,8 @@ const { notFoundPage } = require('./src/utils/errorHandlers');
 
 /* Define carpeta de archivos estáticos */
 
-app.use(express.static('public'));
-//app.use(express.static(path.join(__dirname, 'public')));
+//app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 /* Parsea los datos recibidos por POST */
